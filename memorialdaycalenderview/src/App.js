@@ -1,14 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
-import  { BeforeLogin } from "./containers/BeforeLogin";
 import { Component } from 'react';
+import loginForm from './components/loginForm.js';
 
 class App extends Component {
-  render(){
+   render(){
     return(
-      <BeforeLogin/>
+        <form>
+          <loginForm/>
+        </form>
+       
     );
-  }
+  };
 }
 
 export default App;

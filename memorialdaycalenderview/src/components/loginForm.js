@@ -1,8 +1,8 @@
 import React from 'react'
 
-export class loginForm extends React.Component {
+class loginForm extends React.Component {
     render(){
-        return(
+    return(
         <form>
             <lable>
                 ID : <input type= "text" name="id" />           
@@ -16,3 +16,5 @@ export class loginForm extends React.Component {
         );
     }
 }
+
+export default loginForm;
