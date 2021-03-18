@@ -1,20 +1,22 @@
-import React from 'react'
+import React, { Component } from 'react';
+import SignUp  from './SignUp';
 
-class loginForm extends React.Component {
+class LoginForm extends Component {
+
     render(){
     return(
         <form>
             <lable>
-                ID : <input type= "text" name="id" />           
+                ID : <input type= "text" name="id" placeholder  = "ID"/>           
             </lable> 
             <label>
-                PW : <input type= "passwd" name="pw"/>
+                PW : <input type= "password" name="pw" placeholder  = "password"/>
             </label>
-            <button className="login">Login</button>
-            <button className="sign_up">SignUp</button>
+            <button className="Lbtn">Login</button>
+            <button className="Sbtn" onClick={() => }>SignUp</button>
         </form>
         );
     }
 }
 
-export default loginForm;
+export default LoginForm;

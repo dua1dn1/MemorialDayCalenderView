@@ -1,13 +1,15 @@
 import { Component } from 'react';
-import loginForm from './components/loginForm.js';
+import LoginForm from './components/LoginForm';
 
 class App extends Component {
-   render(){
+  
+  
+  
+  render(){
     return(
-        <form>
-          <loginForm/>
-        </form>
-       
+        <div>
+          <LoginForm />
+		    </div>
     );
   };
 }
