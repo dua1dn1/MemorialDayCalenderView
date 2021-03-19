@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './LoginForm.css';
 
 class LoginForm extends Component {
 
@@ -10,8 +11,11 @@ class LoginForm extends Component {
 
     render(){
     return(
-        <form>
-            signin
+        <form className="form">
+            <div>
+                <p>Login</p>
+            </div>
+            <div>     
             <lable>
                 ID : <input type= "text" name="id" placeholder  = "ID"/>           
             </lable> 
@@ -20,6 +24,7 @@ class LoginForm extends Component {
             </label>
             <button className="Lbtn" onClick={()=>console.log("test")}>Login</button>
             <button className="Sbtn" onClick={() => this.setToggle("Signup")}>SignUp</button>
+            </div>
         </form>
         );
     }
